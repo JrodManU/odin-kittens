@@ -1,0 +1,5 @@
+<li>
+  <p><b><%= kitten.name %></b> Age: <%= kitten.age %> Cuteness: <%= kitten.cuteness %> Softness: <%= kitten.softness %></p>
+  <%= link_to "edit", edit_kitten_path(kitten) %>
+  <%= link_to "delete", kitten_path(kitten), method: 'delete' %>
+</li>

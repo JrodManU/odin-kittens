@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "Kittens", kittens_path %>
+      <%= link_to "New Kitten", new_kitten_path %>
+      <% flash.each do |type, message| %>
+        <p><b><%=type.capitalize %>:</b> <%= message %></p>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>
